@@ -1,0 +1,6 @@
+.idea
+.vagrant
+new-emproyee-training.iml
+composer.lock
+vendor/
+build/
