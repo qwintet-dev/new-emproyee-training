@@ -35,12 +35,9 @@ http://www.jetbrains.com/phpstorm/
 
 桐木さん詳しい
 
-### travisCIにGithubアカウントを紐付ける
+### scrutinizerにGithubアカウントを紐付ける
 
-下記リンク先左上の __Sign in with Github__ をクリックするとGithubのサイトに遷移するので、  
-遷移先の __Authorize application__ と書かれた緑のボタンをクリックする。  
-パスワード入力画面に遷移するので、パスワードを入力してGithubアカウントとtravisのアカウントを紐付ける。  
-https://travis-ci.org/
+まとめきれてないんで、口頭で説明
 
 ## PCにサーバーを構築
 
