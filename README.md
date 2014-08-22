@@ -68,3 +68,12 @@ vagrant reload
 # 削除
 vagrant destroy -f
 ```
+
+## リポジトリの設定
+
+このリポジトリを自分のGithubアカウントにforkします（右上のForkボタンをクリック）  
+forkしたリポジトリを自分のPCにcloneして課題プログラムを書いていきます。
+
+### travis ci にリポジトリを関連付ける
+
+あとで書く
