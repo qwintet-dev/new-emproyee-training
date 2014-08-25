@@ -4,7 +4,7 @@ class TypeTest extends PHPUnit_Framework_TestCase
 {
 	public function testGetBoolean()
 	{
-		$this->assertTrue( Type::getBoolean() );
+		$this->assertTrue( is_bool(Type::getBoolean()) );
 	}
 
 	public function testGetInteger()
@@ -30,5 +30,10 @@ class TypeTest extends PHPUnit_Framework_TestCase
 	public function testGetObject()
 	{
 		$this->assertTrue( is_object(Type::getObject()) );
+	}
+
+	public function testGetFunction()
+	{
+		$this->assertTrue( is_callable(Type::getFunction()) );
 	}
 }

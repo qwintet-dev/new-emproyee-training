@@ -35,9 +35,24 @@ http://www.jetbrains.com/phpstorm/
 
 桐木さん詳しい
 
+## リポジトリの設定
+
+### 自分のGithubに研修用プログラムを持ってくる
+
+このリポジトリを自分のGithubアカウントにforkします（右上のForkボタンをクリック）  
+
+### 自分のPCにforkしたリポジトリをcloneする
+
+以下のコマンドの`[username]`をgithubで登録したユーザ名に変更して、実行します
+
+```sh
+git clone git@github.com:[username]/new-emproyee-training.git
+```
+
 ### scrutinizerにGithubアカウントを紐付ける
 
-まとめきれてないんで、口頭で説明
+下記リンクからGithubアカウントとscrutinizerアカウントを関連付けます。  
+https://scrutinizer-ci.com/
 
 ## PCにサーバーを構築
 
@@ -66,11 +81,6 @@ vagrant reload
 vagrant destroy -f
 ```
 
-## リポジトリの設定
+## 課題一覧
 
-このリポジトリを自分のGithubアカウントにforkします（右上のForkボタンをクリック）  
-forkしたリポジトリを自分のPCにcloneして課題プログラムを書いていきます。
-
-### travis ci にリポジトリを関連付ける
-
-あとで書く
+準備中

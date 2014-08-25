@@ -67,4 +67,14 @@ class Type
 	{
 		return null;
 	}
+
+	/**
+	 * 関数を返す処理です、関数は何でも構いません
+	 *
+	 * @return callable
+	 */
+	public static function getFunction()
+	{
+		return null;
+	}
 }
