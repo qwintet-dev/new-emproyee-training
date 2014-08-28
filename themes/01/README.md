@@ -49,17 +49,18 @@ is_string($var2); // -> false
 ## integer
 
 integer型は整数を表す型です、`0`,`1`,`10`,`-1`,`-10`のように表現します。  
-文字列で整数を定義した場合、その値が計算などの式で利用されると暗黙的にinteger型として評価されて処理が行われます。
+文字列で整数を定義した場合、その値が計算などの式で利用されると暗黙的にinteger型として評価されて処理が行われます。  
+integer型は省略してintと書かれることがあります（殆どの場合、intと省略される）。
 
 ```php
 <?php
 $var1 = 100;
-var_dump($var1); // -> (integer)100
+var_dump($var1); // -> int(100)
 $var2 = '200';
-var_dump($var2); // -> (string)200
+var_dump($var2); // -> string(3) "200"
 
-// integer型とstring型を足し算した場合、string型の文字が数字であれば、それはinteger型として扱われる
-var_dump($var1 + $var2); // -> (integer)300
+// integer型とstring型を足し算した場合、string型の文字が整数であれば、それはinteger型として扱われる
+var_dump($var1 + $var2); // -> int(300)
 ```
 
 値がintegerであるかどうかを評価するには`is_int`関数を利用します。
@@ -70,6 +71,17 @@ $var1 = 100;
 is_int($var1); // -> true
 $var2 = '200';
 is_int($var2); // -> false
+```
+
+もし、string型、integer型関係なく数値であることを確認したい場合は`is_numeric`関数を利用します。  
+但し、`is_numeric`関数は後述するfloat型でも`true`を返すので注意が必要です。
+
+```php
+is_numeric('100'); // -> true
+
+// float型もtrueを返す
+is_numeric(1.1); // -> true
+is_numeric('1.1'); // -> true
 ```
 
 ## float
@@ -80,22 +92,22 @@ integer型は少数を表す型です、`1.0`,`0.1`,`1.34`,`-10.56`のように�
 ```php
 <?php
 $var1 = 3.14;
-var_dump($var1); // -> (float)3.14
+var_dump($var1); // -> float(3.14)
 $var2 = '1.4';
-var_dump($var2); // -> (string)1.4
+var_dump($var2); // -> string(3) "1.4"
 
-// integer型とstring型を足し算した場合、string型の文字が数字であれば、それはinteger型として扱われる
-var_dump($var1 + $var2); // -> (float)4.54
+// float型とstring型を足し算した場合、string型の文字が少数であれば、それはfloat型として扱われる
+var_dump($var1 + $var2); // -> float(4.54)
 ```
 
-値がintegerであるかどうかを評価するには`is_int`関数を利用します。
+値がintegerであるかどうかを評価するには`is_float`関数を利用します。
 
 ```php
 <?php
-$var1 = 100;
-is_int($var1); // -> true
-$var2 = '200';
-is_int($var2); // -> false
+$var1 = 3.14;
+is_float($var1); // -> true
+$var2 = '1.4';
+is_float($var2); // -> false
 ```
 
 ## array
