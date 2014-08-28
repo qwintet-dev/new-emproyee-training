@@ -29,7 +29,6 @@ is_bool($var2); // -> false
 string型は文字列を表す型です、文字列は`''`または`""`で括って表現します。
 
 ```php
-<?php
 $var1 = 'hello';
 var_dump($var1); // -> string(5) "hello"
 $var2 = "true";
@@ -39,7 +38,6 @@ var_dump($var2); // -> string(4) "true"
 値がbooleanであるかどうかを評価するには`is_string`関数を利用します。
 
 ```php
-<?php
 $var1 = 'hello';
 is_string($var1); // -> true
 $var2 = true;
@@ -53,7 +51,6 @@ integer型は整数を表す型です、`0`,`1`,`10`,`-1`,`-10`のように表�
 integer型は省略してintと書かれることがあります（殆どの場合、intと省略される）。
 
 ```php
-<?php
 $var1 = 100;
 var_dump($var1); // -> int(100)
 $var2 = '200';
@@ -66,7 +63,6 @@ var_dump($var1 + $var2); // -> int(300)
 値がintegerであるかどうかを評価するには`is_int`関数を利用します。
 
 ```php
-<?php
 $var1 = 100;
 is_int($var1); // -> true
 $var2 = '200';
@@ -90,7 +86,6 @@ integer型は少数を表す型です、`1.0`,`0.1`,`1.34`,`-10.56`のように�
 文字列で少数を定義した場合、その値が計算などの式で利用されると暗黙的にfloat型として評価されて処理が行われます。
 
 ```php
-<?php
 $var1 = 3.14;
 var_dump($var1); // -> float(3.14)
 $var2 = '1.4';
@@ -103,7 +98,6 @@ var_dump($var1 + $var2); // -> float(4.54)
 値がintegerであるかどうかを評価するには`is_float`関数を利用します。
 
 ```php
-<?php
 $var1 = 3.14;
 is_float($var1); // -> true
 $var2 = '1.4';
@@ -122,7 +116,6 @@ array型は複数の値を格納した一つの集合です。
 次のように配列を定義することでキーを独自に指定することが出来ます `['color' => 'green', 'status' => 'ok']`。
 
 ```php
-<?php
 $var1 = [0,1,2];
 var_dump($var1); // -> array(3) { [0] => int(0), [1] => int(1), [2] => int(2) }
 $var2 = ['first' => 1, 'second' => 2, 'third' => 3];
@@ -132,7 +125,6 @@ var_dump($var1); // -> array(3) { ["first"] => int(1), ["second"] => int(2), ["t
 値がarrayであるかどうかを評価するには`is_array`関数を利用します。
 
 ```php
-<?php
 $var = [0,1,2];
 is_array($var); // ->true
 ```
@@ -142,7 +134,6 @@ is_array($var); // ->true
 object型は処理、データの集合でPHPでは`class`をインスタンス化したものがobject型として扱われます。
 
 ```php
-<?php
 $var = new stdClass;
 var_dump($var); // -> object(stdClass)#1 (0) {}
 ```
@@ -150,7 +141,6 @@ var_dump($var); // -> object(stdClass)#1 (0) {}
 値がobjectであるかどうかを評価するには`is_object`関数を利用します。
 
 ```php
-<?php
 $var = new stdClass;
 is_object($var); // ->true
 ```
@@ -161,7 +151,6 @@ callable型は関数（function）を表す型です。
 値が関数であるかどうかを評価するには`is_callable`関数を利用します。  
 
 ```php
-<?php
 is_callable(function() { ... }); // -> true
 ```
 
@@ -171,7 +160,6 @@ is_callable(function() { ... }); // -> true
 例えば、変数が宣言されたが何の値も代入されない場合、PHPはその型を`null`と判定します。
 
 ```php
-<?php
 // 変数を宣言したが、値が代入されれいない。
 $var;
 var_dump($var); // -> NULL
@@ -181,7 +169,6 @@ var_dump($var); // -> NULL
 その関数の戻り値は何も無い（≒何が返されるか分からない）と判断され`null`となります。
 
 ```php
-<?php
 function foo()
 {
     echo 'foo';
