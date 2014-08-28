@@ -31,9 +31,9 @@ string型は文字列を表す型です、文字列は`''`または`""`で括っ
 ```php
 <?php
 $var1 = 'hello';
-var_dump($var1); // -> (string)hello
+var_dump($var1); // -> string(5) "hello"
 $var2 = "true";
-var_dump($var2); // -> (string)true
+var_dump($var2); // -> string(4) "true"
 ```
 
 値がbooleanであるかどうかを評価するには`is_string`関数を利用します。
@@ -174,7 +174,7 @@ is_callable(function() { ... }); // -> true
 <?php
 // 変数を宣言したが、値が代入されれいない。
 $var;
-var_dump($var); // -> null
+var_dump($var); // -> NULL
 ```
 
 上記以外にも関数が何の戻り値も返さない場合、  
@@ -189,7 +189,7 @@ function foo()
 
 // 関数fooは戻り値が無い
 $var = foo();
-var_dump($var); // -> null
+var_dump($var); // -> NULL
 ```
 
 値がnullかどうかを評価するには`is_null`関数を利用します。
