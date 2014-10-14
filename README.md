@@ -83,4 +83,5 @@ vagrant destroy -f
 
 ## 課題一覧
 
-準備中
+* [課題01](https://github.com/qwintet-dev/new-emproyee-training/blob/master/themes/01/README.md)
+* [課題02](https://github.com/qwintet-dev/new-emproyee-training/blob/master/themes/02/README.md)
