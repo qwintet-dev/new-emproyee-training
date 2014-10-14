@@ -41,7 +41,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     sudo chkconfig mysqld on
 
     # php setting
-    sudo yum install -y --enablerepo=remi-php55 php php-devel php-pdo php-mbstring php-mcrypt php-mysqlnd
+    sudo yum install -y --enablerepo=remi-php56 php php-devel php-pdo php-mbstring php-mcrypt php-mysqlnd
     sudo cp /vagrant/server-config/php.ini /etc/php.d/
     sudo cd /vagrant
     sudo php composer.phar install
