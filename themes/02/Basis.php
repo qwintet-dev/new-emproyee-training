@@ -21,7 +21,7 @@ class Basis
 	public static function compareStrict($a=1, $b='1')
 	{
 		// return ($a === $b);
-		return ($a == $b);
+		// return ($a == $b);
 	}
 
 	/**
@@ -36,7 +36,7 @@ class Basis
 	 */
 	public static function compareLoose($a=0, $b=false)
 	{
-		return ($a === $b);
+		// return ($a === $b);
 		// return ($a == $b);
 	}
 }
